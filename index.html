@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <form id="calculatorForm">
+        <input type="text" id="result">
+        <div class="row mt-5">
+       
+        <div class="col-6">
+          
+          <button type="button" onclick="display('/')">&divide;</button>
+        </div>
+        <div class="col-6">
+          <button type="button" onclick="display('7')">7</button>
+          <button type="button" onclick="display('8')">8</button>
+          <button type="button" onclick="display('9')">9</button>
+          <button type="button" onclick="display('*')">&times;</button>
+        </div>
+        <div class="col-6">
+          <button type="button" onclick="display('4')">4</button>
+          <button type="button" onclick="display('5')">5</button>
+          <button type="button" onclick="display('6')">6</button>
+          <button type="button" onclick="display('-')">&minus;</button>
+        </div>
+        <div class="col-6">
+          <button type="button" onclick="display('1')">1</button>
+          <button type="button" onclick="display('2')">2</button>
+          <button type="button" onclick="display('3')">3</button>
+          <button type="button" onclick="display('+')">&plus;</button>
+        </div>
+        <div class="col-6">
+          <button type="button" onclick="back()">&#9003;</button>
+          <button type="button" onclick="display('0')">0</button>
+          <button type="button" onclick="allclear()">AC</button>
+          <button type="button" onclick="output('=')">&equals;</button>
+        </div>
+        </div>
+      </form>
+    
+    
+</body>
+<script src="./calc.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</html>
